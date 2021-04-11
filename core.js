@@ -1,11 +1,3 @@
-// The main logic of create Promise and process then callback is that:
-// 1. When sync process resolve/reject function in constructor,
-// don't do anything, just async process then callback function
-// 2. When async process resolve/reject function in constructor,
-// sync register all then callbacks to Promise instance.
-// Wait for the resolve/reject function processed, and async process all
-// then registered then callbaks
-
 // Simply choose a microtask
 const asyncFn = (function () {
   if (typeof process === 'object' && process !== null && typeof (process.nextTick) === 'function')
