@@ -1,0 +1,15 @@
+{
+  "name": "promise-practice",
+  "version": "1.0.0",
+  "description": "A Promises/A+ implementation project",
+  "main": "core.js",
+  "repository": "git@github.com:yunshang/promise-practice.git",
+  "author": "alshin",
+  "license": "MIT",
+  "scripts": {
+    "test": "promises-aplus-tests core.js"
+  },
+  "dependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}
